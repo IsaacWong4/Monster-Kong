@@ -30,7 +30,7 @@ var GameState = {
         this.ground = this.add.sprite(0, 500, 'ground');
         this.game.physics.arcade.enable(this.ground);
         this.ground.body.allowGravity = false;
-        this.ground.body
+        this.ground.body.immovable = true;
 
         var platform = this.add.sprite(0, 300, 'platform');
         this.game.physics.arcade.enable(platform);
